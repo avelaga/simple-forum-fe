@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Berthold-Akzidenz-Grotesk-Light-Extended';
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Berthold-Akzidenz-Grotesk-Light-Extended';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berthold-Akzidenz-Grotesk'), url(./fonts/Berthold-Akzidenz-Grotesk-BE-Li.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Berthold-Akzidenz-Grotesk-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berthold-Akzidenz-Grotesk'), url(./fonts/Berthold-Akzidenz-Grotesk-BE-Li-Tall-Normal.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir-Black'), url(./fonts/AvenirLTStd-Black.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir-Book'), url(./fonts/AvenirLTStd-Book.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir-Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir-Roman'), url(./fonts/AvenirLTStd-Roman.otf) format('opentype');
+}
+
+a {
+  text-decoration: none;
+  /* color: rgb(0, 255, 255); */
+  color: white;
+}

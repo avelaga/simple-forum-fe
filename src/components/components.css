@@ -1,0 +1,44 @@
+.post {
+  border-radius: 100px;
+  border-color: rgb(73, 73, 73);
+  border-style: solid;
+  border-width: 1px;
+  margin: 2rem;
+  margin-right: 15rem;
+  margin-left: 15rem;
+  padding: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  text-align: left;
+}
+
+.comment {
+  text-align: left;
+  margin-right: 20.5rem;
+  margin-left: 20.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-body {
+
+}
+
+.comment-body {
+  font-family: 'Avenir-Book'; 
+  font-size: 25px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4rem;
+
+  font-family: 'Berthold-Akzidenz-Grotesk-Light-Extended';
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
