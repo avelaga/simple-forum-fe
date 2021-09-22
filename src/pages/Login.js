@@ -15,16 +15,18 @@ export default function Login() {
 
   return (
     <div className="login">
-      <Header />
+      <Header login={true}/>
       <div className="login-box">
         <div className="post-title">be a part of something</div>
         <form>
-          <input type="text" id="fname" name="fname" placeholder="username"/><br/>
+          <input type="text" id="fname" name="fname" placeholder="username" className="login-field"/><br/>
           <input type="text" id="lname" name="lname" type="password" placeholder="password"/>
       </form>
 
-      <button type="button" onClick={signUpClicked}>sign up</button>
-      <button type="button" className="login-button" onClick={loginClicked}>login</button>
+      <div className="login-container">
+        <button type="button" className="flex-button" onClick={signUpClicked}>sign up</button>
+        <button type="button" className="login-button flex-button" onClick={loginClicked}>login</button>
+      </div>
 
       </div>
     </div>
