@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./components.css"
 
-export default function Post(props) {
-
-  // const [username, setUsername] = useState("sunburstbox");
-  // const [postTitle, setPostTitle] = useState("what the fuck did i just see");
-
+export default function Post({title, username}) {
   return(
     <div className="post">
-      <div className="post-title">{props.postTitle}</div>
-      <div className="username">{props.username}</div>
+      <div className="post-title">{title}</div>
+      <div className="username">{username}</div>
     </div>  
   );
 }
