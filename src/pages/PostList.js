@@ -1,14 +1,31 @@
 import Post from "../components/Post";
 import Header from "../components/Header";
+import React, { useState } from 'react';
 import './pages.css';
 
 export default function PostList() {
+
+  const [posts, setPosts] = useState(
+    [
+      {
+        "id": 1,
+        "title": "this is title 1",
+        "username": "sunburstbox"
+      },
+      {
+        "id": 2,
+        "title": "this is title 2",
+        "username": "poopbutt"
+      }
+    ]
+  );
+
   return (
-    <div className="post-list">
+    <div>
       <Header />
-      <a href="/posts/1"><Post /></a>
-      <a href="/posts/2"><Post /></a>
-      <a href="/posts/3"><Post /></a>
+      {posts.map((value, index) => {
+        return <a key={index} href={"/posts/"+value.id}><Post title={value.title} username={value.username}/></a>
+      })}
     </div>
   );
 }
